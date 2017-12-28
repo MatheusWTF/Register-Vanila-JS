@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/register.css">
+  <title>Tilde || Register</title>
+</head>
+<body>
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">
+          <div class="logo"></div>
+          <h2 class="title">Crie sua conta</h2>
+        </div>
+        <div class="card-content">
+          <form>
+            <div class="form-group"> 
+              <label for="nome">Nome completo</label>
+              <input type="text" name="nome" id="name" class="full-width">
+            </div>
+            <div class="form-group">
+              <label for="nome">E-mail</label>
+              <input type="text" name="email" id="email" class="full-width">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" id="pwd" class="full-width">
+            </div>
+            <div class="ui-pwd">
+              <div class="visual-aid"></div>
+              <div class="visual-aid"></div>
+              <div class="visual-aid"></div>
+            </div>
+            <ul class="pwd-rules">
+              <li class="rule">Pelo menos 6 caracteres</li>
+            <li class="rule">Pelo menos 1 letra maiúscula</li>
+            <li class="rule">Pelo menos 1 número</li>
+          </ul>
+          <div class="form-group">
+            <label for="senha-confirm">Confirme sua senha</label>
+            <input type="password" name="senha-confirm" id="pwd-confirm" class="full-width">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Criar conta" class="full-width">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script/register.js"></script>
+</body>
+</html>
