@@ -20,9 +20,9 @@ input[type=text], input[type=password]{padding: 5px 0px 3px 10px; border: 1px so
 input[type=submit]{background: #00b68e; color: white; padding: 8px 0; border: none; margin-top: 30px;}
 input[type=text]:focus{outline: none !important; border: 1px solid #00b68e;}
 input[type=password]:focus{outline: none !important; border: 1px solid gray;}
-.bad:focus{outline: none !important; border: 1px solid red;}
-.mediocre:focus{outline: none !important; border: 1px solid orange;}
-.good:focus{outline: none !important; border: 1px solid green;}
+.bad:focus{outline: none !important; border: 1px solid red !important;}
+.mediocre:focus{outline: none !important; border: 1px solid orange !important;}
+.good:focus{outline: none !important; border: 1px solid green !important;}
 
 
 /* Password Rules */
@@ -30,9 +30,12 @@ input[type=password]:focus{outline: none !important; border: 1px solid gray;}
 .visual-aid{height: 8px; border-radius: 4px; background: rgb(233, 233, 233);}
 .pwd-rules{font-size: 10pt; list-style-type: none; padding-left:0px;}
 .rule:before{content: ""; margin-right: 8px; display: inline-block; width: 8px; height: 8px; background: lightgray; border-radius: 50%;margin-bottom: 1px;}
-.visual-bad{background: red;}
-.visual-mediocre{background: orange;}
-.visual-good{background: green;}
+.rule-bad:before{background: red !important;}
+.rule-good:before{background: green !important;}
+
+.visual-bad{background: red !important;}
+.visual-mediocre{background: orange !important;}
+.visual-good{background: green !important;}
 
 /* Media Query Tablets*/
 @media screen and (min-width: 600px){
@@ -46,7 +49,7 @@ input[type=password]:focus{outline: none !important; border: 1px solid gray;}
 
 /* Media Query Desktop*/
 @media screen and (min-width: 800px){
-  .grid{width: 30%;}
+  .grid{min-width: 400px; max-width: 30%;}
   body{font-size: 12pt;}
   .pwd-rules{font-size: 10pt;}
   .rule:before{width: 10px; height: 10px; margin-bottom: 1px;}
